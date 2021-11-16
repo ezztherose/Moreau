@@ -70,6 +70,7 @@ MoreauToken** get_token_list()
 }
 
 MoreauToken** get_next_token();
+
 MoreauToken* get_look_ahead_token();
 
 void add_token(MoreauToken* token, int line, int character, int indent)
