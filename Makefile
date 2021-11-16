@@ -5,7 +5,7 @@ SRCS=$(wildcard $(SRC)/*.c)
 OBJ=obj
 OBJS=$(patsubst $(SRC)/%.c, $(OBJ)/%.o, $(SRCS))
 BINDER=bin
-BIN = $(BINDER)/main
+BIN = $(BINDER)/moreau
 SUBMITNAME=proj.zip
 
 all: $(BIN)
