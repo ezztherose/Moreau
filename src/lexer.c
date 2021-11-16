@@ -69,9 +69,14 @@ MoreauToken** get_token_list()
     }
 }
 
-MoreauToken** get_next_token();
+MoreauToken** get_next_token() { return token_list; }
 
-MoreauToken* get_look_ahead_token();
+MoreauToken* get_look_ahead_token()
+{
+    MoreauToken* next = token_list[curr_token];
+    if(next != NULL) get_next_token();
+    return next;
+}
 
 void add_token(MoreauToken* token, int line, int character, int indent)
 {
