@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "moreau.h": "c",
+        "stdlib.h": "c"
+    }
+}
